@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<ol type="1">
+<h1> <li>  Gdzie jest wstawiany? </h1>
+<p style="font-family:Arial"> Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <&nbsp;head&nbsp;> a
+<&nbsp;/head&nbsp;> 
+<h1> <li> Składnia teoretyczna </h1>
+<style> td { border: 1px solid black; } </style>
+<table>
+<tr>
+<td>
+<textarea cols="100" rows="11">
+<head>
+(...)
+ <style type="text/css">
+ /* <![CDATA[ */
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ (...)
+ /* ]]> */
+ </style>
+(...)
+</head>
+</td>
+</tr>
+</textarea>
+</table> 
+<h1> <li> Jakie mogą być selektory? </h1>
+Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka
+tabeli) i inne.
+<h1> <li>  jakie mogą być cechy i wartości? </h1>
+Jako "cecha" należy wpisać  konkretne atrybuty formatowania, natomiast w "wartości" wpisujemy dokładną wartość atrybutu.
+</li>
+</p>
+</body>
+</html>
