@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<ol type="1">
+<h1> <li>  Składnia teoretyczna </h1>
+<style> td { border: 1px solid black; } </style>
+<table>
+<tr>
+<td>
+<textarea cols="100" rows="5">
+<head>
+(...)
+<link rel="Stylesheet" type="text/css" href="style.css" />
+(...)
+</head>
+</textarea>
+</td>
+</tr>
+</table>
+<h1><li> Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS? </h1>
+Styl zewnętrzny jest wstawiany w treści nagłówkowej każdego z dokumentów (pomiędzy
+znacznikami <&nbsp;head&nbsp;> a <&nbsp;/head&nbsp;>). Jako podłączenie można dołączyć dowolną liczbę.
+<h1> <li>  Jaka jest najprostsza forma wstawiania stylu zewnętrznego? </h1>
+<style> td { border: 1px solid black; } </style>
+<table>
+<tr>
+<td>
+<textarea cols="100">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</textarea>
+</td>
+</tr>
+</table>
+<h1> <li> Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad
+musi być zachowana przy większej ilości dołączanych styli? </h1> 
+Nie ma limitu co do liczby dołączanych arkuszy do jednego dokumentu HTML,ale każdy musi być jako osobny element <&nbsp;link rel="Stylesheet" /&nbsp;>.
+<h1> <li>Co się dzieje w przypadku konfliktów? </h1>
+W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.
+<h1> <li> Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? </h1> 
+Do tworzenia i edytowania wystarczy zwykły edytor tekst.
+<h1> <li> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS? </h1>
+Można się posłużyć specjalnym edytorem CSS
+<h1> <li>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli? </h1>
+plik będący zewnętrznym arkuszem stylów musi mieć
+rozszerzenie *.css
+<h1> <li> Jakie są zalety zewnętrznego arkusza styli?
+</ol>
+<ol type="1">
+<li> Wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+<li> Jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez
+konieczności zmiany każdej strony osobno.
+</ol>
+<ol type="1" start="10">
+<h1> <li> Uwagi na temat pisania w CSS. </h1> 
+<ul>
+<li>Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu.
+(sekcja head ) 
+<li> można dołączyć dowolną liczbę zewnętrznych arkuszy stylów
+- każdy jako osobny element <&nbsp;link rel="Stylesheet" /&nbsp;>. 
+<li> W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później
+<li>Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i
+edytowania wystarczy zwykły edytor tekst. 
+<li> Można się posłużyć specjalnym edytorem CSS.
+<li> Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem stylów musi mieć
+rozszerzenie *.css
+</ul>
+</body>
+</html>
