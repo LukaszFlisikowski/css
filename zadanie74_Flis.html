@@ -1,62 +1,110 @@
-<html>
-	<head>
-		<title> Zadanie 74 </title>
-		<meta charset="UTF-8"/>
-	</head>
-	<body>
-		<table style="border: 1px solid black;">
-			<tr>
-				<td style="border: 1px solid black;">
-					<b> Kolor tła </b>
-				</td> 
-				<td style="border: 1px solid black;"> 
-					Jednorazowy opis:<br/><br/><br/>
-					selektor {background-color: kolor;}<br/><br/>
-					????????????
-				</td>
-			</tr>
-			<tr>
-				<td style="border: 1px solid black;">
-					<b> Tło Obrazkowe </b>
-				</td> 
-				<td style="border: 1px solid black;"> 
-					Jednorazowy opis:<br/><br/><br/>
-					selektor {background-image: url(adres);}<br/><br/>
-					background-image: url("file:///c:/CSS/_rozwiazanie/tla_marginesy/grafiki/tlo_1.jpg");
-				</td>
-			</tr>
-			<tr>
-				<td style="border: 1px solid black;">
-					<b> Powtarzanie tła </b>
-				</td> 
-				<td style="border: 1px solid black;"> 
-					Jednorazowy opis:<br/><br/>
-					selektor {background-repeat: powtarzanie;}<br/><br/>
-					???????????<br/>
-					Parametry:<br/>
-					"repeat" - jednocześnie w pionie i poziomie - domyślnie<br/>
-					"repeat-x" - w poziomie<br/>
-					"repeat-y" - w pionie<br/>
-					"no-repeat" - pojedynczy obrazek - bez powtarzania - w górnym-lewym rogu
-				</td>
-			</tr>
-			<tr>
-				<td style="border: 1px solid black;">
-					<b> Pozycja tła </b>
-				</td> 
-				<td style="border: 1px solid black;"> 
-					Jednorazowy opis:<br/><br/>
-					selektor {background-position: pozycja;}<br/><br/>
-					???????????<br/>
-					Parametry:<br/>
-					"center" - obrazek na środku (w centrum)<br/>
-					"left" - obrazek po lewej<br/>
-					"right" - obrazek po prawej<br/>
-					"top" - obrazek na górze<br/>
-					"bottom" - obrazek na dole<br/>
-				</td>
-			</tr>
-			
-		</table>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<table border="1">
+  <tr>
+    <th>Kolor tła</th>
+    <td>Jednozadaniowy opis:<br>
+
+        selektor {background-color: kolor;}<br>
+        h1 {background-color: red;}
+
+        </td>
+  </tr>
+  <tr>
+    <th>Tło Obrazkowe</th>
+    <td>Jednozadaniowy opis:<br>
+
+        selektor {background-image: url(adres);}<br>
+        background-image: url("file:///c:/CSS/_rozwiazanie/tla_marginesy/grafiki/tlo_1.jpg");</td>
+  </tr>
+  <tr>
+    <th>Powtarzanie tła </th>
+    <td> Jednozadaniowy opis:<br>
+        selektor {background-repeat: powtarzanie;}<br>
+        h2 {background-repeat: powtarzanie;}<br>
+        Parametry:<br>
+        "repeat" - jednocześnie w pionie i poziomie - domyślnie<br>
+ "repeat-x" - w poziomie<br>
+ "repeat-y" - w pionie<br>
+ "no-repeat" - pojedynczy obrazek - bez powtarzania - w górnym-lewym rogu</td>
+  </tr>
+  <tr>
+    <th>Pozycja tła  </th>
+    <td> Jednozadaniowy opis:<br>
+        selektor {background-position: pozycja;}<br>
+        h3 {background-position: pozycja;}<br>
+        Parametry:<br>
+        "center" - obrazek na środku (w centrum)<br>
+ "left" - obrazek po lewej<br>
+ "right" - obrazek po prawej<br>
+ "top" - obrazek na górze<br>
+ "bottom" - obrazek na dole<br>
+ jednostki miary - odległość od lewej krawędzi<br>
+ dwie wartości (oddzielone spacją):<br>
+ "left top" - lewy-górny róg<br>
+ "left bottom" - lewy-dolny róg<br>
+ "right top" - prawy-górny róg<br>
+ "right bottom" - prawy-dolny róg<br>
+ dwie jednostki miary - pierwsza z nich oznacza odległość od lewej krawędzi, a
+ druga - od górnej</td>
+  </tr>
+  <tr>
+    <th>Zaczepienie tła  </th>
+    <td> Jednozadaniowy opis:<br>
+        selektor {background-attachment: zaczepienie;}<br>
+        h4 {background-attachment: zaczepienie;}<br>
+        Parametry:<br>
+        "scroll" - przewijanie tła (domyślnie)<br>
+ "fixed" - tło nieruchome</td>
+  </tr>
+  <tr>
+    <th>Łączenie
+        atrybutów tła</th>
+    <td> Jednozadaniowy opis:<br>
+        selektor {background: wartości atrybutów;}
+    </td>
+  </tr>
+  <tr>
+    <th>Gradient
+        liniowy </th>
+    <td> Jednozadaniowy opis:<br>
+
+        selektor { background: linear-gradient(kierunek, kolor1 odległość1, kolor2 odległość2...) }<br>
+        Parametry:<br>
+        to top - przejście kolorów nastąpi pionowo z dołu do góry (odpowiednik 0deg)<br>
+ to right top - ukośnie z lewego-dolnego do prawego-górnego narożnika<br>
+ to right - poziomo z lewej do prawej strony (odpowiednik 90deg)<br>
+ to right bottom - ukośnie z lewego-górnego do prawego-dolnego narożnika<br>
+ to bottom - pionowo z górny do dołu (odpowiednik 180deg - domyślnie)<br>
+ to left bottom - ukośnie z prawego-górnego do lewego-dolnego narożnika<br>
+ to left - poziomo z prawej do lewej strony (odpowiednik 270deg)<br>
+ to left top - ukośnie z prawego-dolnego do lewego-górnego narożnika
+        </td>
+  </tr>
+  <tr>
+    <th>Gradient
+        promienisty
+         </th>
+    <td> Jednozadaniowy opis:<br>
+
+        selektor { background: radial-gradient(kształt rozmiar at pozycja, kolor1 odległość1, kolor2 odległość2...) }<br>
+
+        Parametry:<br>
+        closest-side - gradient będzie się rozchodził do najbliższej krawędzi elementu<br>
+ farthest-side - do najdalszej krawędzi<br>
+ closest-corner - do najbliższego narożnika<br>
+ farthest-corner - do najdalszego narożnika (domyślnie)<br>
+ promień - podany za pomocą jednostek długości lub procentowo<br>
+ poziom pion - poziomy i pionowy promień elipsy, określony za pomocą jednostek
+długości lub procentowo
+</td>
+  </tr>
+</table>
+
+</body>
 </html>
